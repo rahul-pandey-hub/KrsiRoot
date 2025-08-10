@@ -1,0 +1,14 @@
+{
+  "name": "rsiRoots - Premium Organic Food Trading Platform",
+  "short_name": "rsiRoots",
+  "description": "India's leading organic food trading platform connecting farmers with global buyers",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4CAF50",
+  "orientation": "portrait",
+  "categories": ["business", "food", "shopping"],
+  "lang": "en",
+  "dir": "ltr",
+  "prefer_related_applications": false
+} 

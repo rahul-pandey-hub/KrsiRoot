@@ -1,0 +1,32 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://rsiRoots.com
+
+# Sitemaps
+Sitemap: https://rsiRoots.com/sitemap.xml
+
+# Disallow paths
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /private/
+Disallow: /404
+Disallow: /500
+
+# Crawl delay
+Crawl-delay: 10
+
+# Google specific
+User-agent: Googlebot
+Allow: /
+Allow: /*.js$
+Allow: /*.css$
+
+# Bing specific
+User-agent: Bingbot
+Allow: /
+Allow: /*.js$
+Allow: /*.css$ 
