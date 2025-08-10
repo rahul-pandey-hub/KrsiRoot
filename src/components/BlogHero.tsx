@@ -12,7 +12,7 @@ export default function BlogHero() {
           transition={{ duration: 0.6 }}
           className="text-4xl md:text-5xl font-bold text-primary text-center"
         >
-          rsiRoots Blog
+          KrsiRoots Blog
         </motion.h1>
         <motion.p 
           initial={{ opacity: 0, y: 20 }}

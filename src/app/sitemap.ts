@@ -4,7 +4,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Get your blog posts from your database or filesystem
   // const posts = await getBlogPosts();
   
-  const baseUrl = 'https://rsiRoots.com';
+  const baseUrl = 'https://KrsiRoots.com';
 
   // Base routes that are static
   const routes = [

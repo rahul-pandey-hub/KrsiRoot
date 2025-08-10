@@ -5,9 +5,9 @@ interface AboutLayoutProps {
   children: ReactNode;
 }
 export const metadata: Metadata = {
-    title: "About Us | rsiRoots",
+    title: "About Us | KrsiRoots",
     description:
-      "About rsiRoots",
+      "About KrsiRoots",
   };
   
 

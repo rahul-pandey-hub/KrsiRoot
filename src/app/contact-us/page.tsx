@@ -190,7 +190,7 @@ const ContactPage: FC = () => {
             {/* Contact Information Section */}
             <AnimatedSection className="space-y-8">
                 <div className="bg-white rounded-xl shadow-lg p-8 flex justify-center">
-                   <Image src="/images/rsiRoots.jpeg" alt="rsiRoots Logo" width={300} height={200} />
+                   <Image src="/images/KrsiRoots.jpeg" alt="KrsiRoots Logo" width={300} height={200} />
                 </div>
               <div className="bg-white rounded-xl shadow-lg p-8">
                 <h2 className="text-2xl font-semibold text-primary mb-6">
@@ -226,8 +226,8 @@ const ContactPage: FC = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold">Email</h3>
-                      <Link href="mailto:info@rsiRoots.com" className="text-gray-600 hover:text-primary transition">
-                        <p className="text-gray-600">info@rsiRoots.com</p>
+                      <Link href="mailto:info@KrsiRoots.com" className="text-gray-600 hover:text-primary transition">
+                        <p className="text-gray-600">info@KrsiRoots.com</p>
                       </Link>
                     </div>
                   </div>
@@ -241,31 +241,31 @@ const ContactPage: FC = () => {
                 </h2>
                 <div className="flex space-x-6">
                   <a
-                    href="https://www.facebook.com/people/rsiRoots/61576127285769/"
+                    href="https://www.facebook.com/people/KrsiRoots/61576127285769/"
                     className="text-primary hover:text-primary/80 text-2xl transition"
                   >
                     <i className="fab fa-facebook"></i>
                   </a>
                   <a
-                    href="https://x.com/rsiRoots_sm"
+                    href="https://x.com/KrsiRoots_sm"
                     className="text-primary hover:text-primary/80 text-2xl transition"
                   >
                     <FaXTwitter className='mt-[5px]' />
                   </a>
                   <a
-                    href="https://www.instagram.com/rsiRoots_sm"
+                    href="https://www.instagram.com/KrsiRoots_sm"
                     className="text-primary hover:text-primary/80 text-2xl transition"
                   >
                     <i className="fab fa-instagram"></i>
                   </a>
                   <a
-                    href="https://linkedin.com/company/rsiRoots"
+                    href="https://linkedin.com/company/KrsiRoots"
                     className="text-primary hover:text-primary/80 text-2xl transition"
                   >
                     <i className="fab fa-linkedin"></i>
                   </a>
                   <a
-                    href="https://youtube.com/@rsiRoots_organic"
+                    href="https://youtube.com/@KrsiRoots_organic"
                     className="text-primary hover:text-primary/80 text-2xl transition"
                   >
                     <i className="fab fa-youtube"></i>

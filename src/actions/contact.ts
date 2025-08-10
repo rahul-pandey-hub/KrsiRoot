@@ -37,7 +37,7 @@ export async function sendContactEmail(formData: {
     const mailOptions = {
       from: process.env.SMTP_FROM_EMAIL,
       to: allRecipients,
-      subject: `[rsiRoots Contact] ${formData.subject}`,
+      subject: `[KrsiRoots Contact] ${formData.subject}`,
       html: `
         <!DOCTYPE html>
         <html>
@@ -78,8 +78,8 @@ export async function sendContactEmail(formData: {
               </div>
             </div>
             <div class="footer">
-              <p>This email was sent from the rsiRoots contact form.</p>
-              <p>© ${new Date().getFullYear()} rsiRoots. All rights reserved.</p>
+              <p>This email was sent from the KrsiRoots contact form.</p>
+              <p>© ${new Date().getFullYear()} KrsiRoots. All rights reserved.</p>
             </div>
           </div>
         </body>

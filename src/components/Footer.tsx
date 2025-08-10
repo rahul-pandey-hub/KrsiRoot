@@ -7,14 +7,14 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-2xl font-bold text-secondary mb-4">rsiRoots</h3>
+            <h3 className="text-2xl font-bold text-secondary mb-4">KrsiRoots</h3>
             <p className="text-gray-600 mb-4">Bringing nature's goodness to your table.</p>
             <div className="flex space-x-4">
-              <Link href="https://www.facebook.com/people/rsiRoots/61576127285769/" className="text-primary hover:text-secondary text-xl transition"><i className="fab fa-facebook"></i></Link>
-              <Link href="https://www.instagram.com/rsiRoots_sm" className="text-primary hover:text-secondary text-xl transition"><i className="fab fa-instagram"></i></Link>
-              <Link href="https://x.com/rsiRoots_sm" className="text-primary hover:text-secondary text-xl transition"><FaXTwitter className='mt-[5px]' /></Link>
-              <Link href="https://www.linkedin.com/company/rsiRoots" className="text-primary hover:text-secondary text-xl transition"><i className="fab fa-linkedin"></i></Link>
-              <Link href="https://www.youtube.com/@rsiRoots_organic" className="text-primary hover:text-secondary text-xl transition"><i className="fab fa-youtube"></i></Link>
+              <Link href="https://www.facebook.com/people/KrsiRoots/61576127285769/" className="text-primary hover:text-secondary text-xl transition"><i className="fab fa-facebook"></i></Link>
+              <Link href="https://www.instagram.com/KrsiRoots_sm" className="text-primary hover:text-secondary text-xl transition"><i className="fab fa-instagram"></i></Link>
+              <Link href="https://x.com/KrsiRoots_sm" className="text-primary hover:text-secondary text-xl transition"><FaXTwitter className='mt-[5px]' /></Link>
+              <Link href="https://www.linkedin.com/company/KrsiRoots" className="text-primary hover:text-secondary text-xl transition"><i className="fab fa-linkedin"></i></Link>
+              <Link href="https://www.youtube.com/@KrsiRoots_organic" className="text-primary hover:text-secondary text-xl transition"><i className="fab fa-youtube"></i></Link>
             </div>
           </div>
           
@@ -56,9 +56,9 @@ export default function Footer() {
                 </Link>
               </li>
               <li className="flex items-start"> 
-                <Link href="mailto:info@rsiRoots.com" className="text-gray-600 hover:text-primary transition">
+                <Link href="mailto:info@KrsiRoots.com" className="text-gray-600 hover:text-primary transition">
                 <i className="fas fa-envelope text-primary mt-1 mr-2"></i>
-                <span className="text-gray-600">info@rsiRoots.com</span>
+                <span className="text-gray-600">info@KrsiRoots.com</span>
                 </Link>
               </li>
             </ul>
@@ -66,7 +66,7 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-gray-200 mt-12 pt-8 text-center text-gray-500 text-sm">
-          <p>&copy; {new Date().getFullYear()} rsiRoots. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} KrsiRoots. All rights reserved.</p>
         </div>
       </div>
     </footer>

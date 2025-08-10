@@ -241,7 +241,7 @@ Connects farmers directly with sellers and exporters through a transparent digit
               What Our Community Says
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Hear from farmers and customers who are part of the rsiRoots family
+              Hear from farmers and customers who are part of the KrsiRoots family
             </p>
           </AnimatedSection>
 
@@ -250,14 +250,14 @@ Connects farmers directly with sellers and exporters through a transparent digit
               <Testimonial
                 name="Nidhi Dholakia"
                 role="Organic Consumer"
-                quote="rsiRoots has revolutionized how we source organic produce for our business. The transparency in sourcing and assurance of true organic quality allows us to confidently offer our customers the best. Their subscription model ensures consistent, timely deliveries—making inventory planning seamless and efficient"
+                quote="KrsiRoots has revolutionized how we source organic produce for our business. The transparency in sourcing and assurance of true organic quality allows us to confidently offer our customers the best. Their subscription model ensures consistent, timely deliveries—making inventory planning seamless and efficient"
               />
             </AnimatedSection>
             <AnimatedSection>
               <Testimonial
                 name="Rajesh Patel"
                 role="Organic Farmer"
-                quote="rsiRoots has helped us grow beyond our local reach as small organic farmer. Their platform connects us directly with customers who care about clean, responsibly-grown produce. With their support in logistics and delivery, we’ve been able to scale efficiently—without compromising on quality or spending extra on distribution."
+                quote="KrsiRoots has helped us grow beyond our local reach as small organic farmer. Their platform connects us directly with customers who care about clean, responsibly-grown produce. With their support in logistics and delivery, we’ve been able to scale efficiently—without compromising on quality or spending extra on distribution."
               />
             </AnimatedSection>
           </div>

@@ -3,10 +3,10 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://rsiRoots.com
+Host: https://KrsiRoots.com
 
 # Sitemaps
-Sitemap: https://rsiRoots.com/sitemap.xml
+Sitemap: https://KrsiRoots.com/sitemap.xml
 
 # Disallow paths
 Disallow: /api/

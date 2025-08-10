@@ -6,7 +6,7 @@ interface ServicesLayoutProps {
 }
 
 export const metadata: Metadata = {
-  title: "rsiRoots | Our Services",
+  title: "KrsiRoots | Our Services",
   description:
     "Our Services",
 };

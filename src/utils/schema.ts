@@ -2,14 +2,14 @@ export const generateOrganizationSchema = () => {
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "rsiRoots",
-    "url": "https://rsiRoots.com",
-    "logo": "https://rsiRoots.com/images/logo.png",
+    "name": "KrsiRoots",
+    "url": "https://KrsiRoots.com",
+    "logo": "https://KrsiRoots.com/images/logo.png",
     "sameAs": [
-      "https://facebook.com/rsiRoots",
-      "https://twitter.com/rsiRoots",
-      "https://instagram.com/rsiRoots",
-      "https://linkedin.com/company/rsiRoots"
+      "https://facebook.com/KrsiRoots",
+      "https://twitter.com/KrsiRoots",
+      "https://instagram.com/KrsiRoots",
+      "https://linkedin.com/company/KrsiRoots"
     ],
     "contactPoint": [{
       "@type": "ContactPoint",
@@ -50,7 +50,7 @@ export const generateBreadcrumbSchema = (items: Array<{ name: string, url: strin
       "@type": "ListItem",
       "position": index + 1,
       "name": item.name,
-      "item": `https://rsiRoots.com${item.url}`
+      "item": `https://KrsiRoots.com${item.url}`
     }))
   };
 }; 

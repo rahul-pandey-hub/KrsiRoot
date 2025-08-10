@@ -98,7 +98,7 @@ const AnimatedTeamImage = ({ frontImage, backImage, name }: { frontImage: string
       {/* Front Image */}
       <Image
         src={frontImage}
-        alt={`${name} - rsiRoots Team Member`}
+        alt={`${name} - KrsiRoots Team Member`}
         fill
         className="object-cover transition-transform duration-500 ease-in-out group-hover:opacity-0"
       />
@@ -120,10 +120,10 @@ export default function AboutPage() {
       <div className="relative pt-16 md:h-[500px] h-[300px] w-full overflow-hidden border-b-2">
         <VideoText
           className="bg-[#f9f9f9]"
-          fontSize={8}
+          fontSize={7.5}
           src="https://videos.pexels.com/video-files/2758322/2758322-uhd_2560_1440_30fps.mp4"
         >
-          About rsiRoot Organics
+          About KrsiRoots Organics
         </VideoText>
         <BackgroundBeams />
       </div>
@@ -281,14 +281,14 @@ export default function AboutPage() {
           <div className="lg:flex items-center gap-12 mb-16">
             <AnimatedSection className="lg:w-1/2 mb-8 lg:mb-0">
               <p className="text-gray-700 mb-4 text-xl">
-                "At rsiRoots, we are committed to supporting fair trade practices
+                "At KrsiRoots, we are committed to supporting fair trade practices
                 that ensure farmers receive fair compensation for their organic
                 products. This not only empowers farmers to thrive but also
                 enables them to invest in their communities and sustainable
                 practices. For our customers, this translates to access to
                 high-quality, ethically sourced organic products that promote
                 both personal well-being and environmental sustainability. By
-                choosing rsiRoots, you are contributing to a fairer global trade
+                choosing KrsiRoots, you are contributing to a fairer global trade
                 system while enjoying the purest, most responsibly produced
                 organic goods.”
               </p>
@@ -298,7 +298,7 @@ export default function AboutPage() {
                 <iframe
                   className="absolute top-0 left-0 w-full h-full"
                   src="https://www.youtube.com/embed/kjKpvyQ3w48"
-                  title="Welcome to rsiRoots – The Future of Organic Trade"
+                  title="Welcome to KrsiRoots – The Future of Organic Trade"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   referrerPolicy="strict-origin-when-cross-origin"

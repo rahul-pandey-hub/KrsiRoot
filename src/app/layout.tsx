@@ -22,16 +22,16 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://rsiRoots.com'),
+  metadataBase: new URL('https://KrsiRoots.com'),
   title: {
-    default: "rsiRoots",
-    template: "%s | rsiRoots"
+    default: "KrsiRoots",
+    template: "%s | KrsiRoots"
   },
   description: "India's leading organic food trading platform connecting farmers with global buyers. Premium organic and sustainable food direct from farm to table.",
   keywords: ["organic food", "organic trading", "sustainable agriculture", "Indian organic products", "farm to table", "organic certification", "global trade", "premium organic"],
-  authors: [{ name: "rsiRoots Team" }],
-  creator: "rsiRoots",
-  publisher: "rsiRoots",
+  authors: [{ name: "KrsiRoots Team" }],
+  creator: "KrsiRoots",
+  publisher: "KrsiRoots",
   formatDetection: {
     email: false,
     address: false,
@@ -47,24 +47,24 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_IN',
-    url: 'https://rsiRoots.com',
-    siteName: 'rsiRoots',
-    title: 'rsiRoots - Organic For All',
+    url: 'https://KrsiRoots.com',
+    siteName: 'KrsiRoots',
+    title: 'KrsiRoots - Organic For All',
     description: "India's leading organic food trading platform connecting farmers with global buyers.",
     // images: [
     //   {
     //     url: '/images/og-image.jpg',
     //     width: 1200,
     //     height: 630,
-    //     alt: 'rsiRoots Platform Preview',
+    //     alt: 'KrsiRoots Platform Preview',
     //   },
     // ],
   },
   twitter: {
     card: 'summary_large_image',
-    site: '@rsiRoots',
-    creator: '@rsiRoots',
-    title: 'rsiRoots - Premium Organic Food Trading Platform',
+    site: '@KrsiRoots',
+    creator: '@KrsiRoots',
+    title: 'KrsiRoots - Premium Organic Food Trading Platform',
     description: "India's leading organic food trading platform connecting farmers with global buyers.",
     // images: ['/images/twitter-image.jpg'],
   },
@@ -85,10 +85,10 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://rsiRoots.com',
+    canonical: 'https://KrsiRoots.com',
     // languages: {
-    //   'en-US': 'https://rsiRoots.com/en-us',
-    //   'hi-IN': 'https://rsiRoots.com/hi',
+    //   'en-US': 'https://KrsiRoots.com/en-us',
+    //   'hi-IN': 'https://KrsiRoots.com/hi',
     // },
   },
   verification: {
@@ -119,14 +119,14 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              "name": "rsiRoots",
-              "url": "https://rsiRoots.com",
-              "logo": "https://rsiRoots.com/images/logo.png",
+              "name": "KrsiRoots",
+              "url": "https://KrsiRoots.com",
+              "logo": "https://KrsiRoots.com/images/logo.png",
               "sameAs": [
-                "https://facebook.com/rsiRoots",
-                "https://twitter.com/rsiRoots",
-                "https://instagram.com/rsiRoots",
-                "https://linkedin.com/company/rsiRoots"
+                "https://facebook.com/KrsiRoots",
+                "https://twitter.com/KrsiRoots",
+                "https://instagram.com/KrsiRoots",
+                "https://linkedin.com/company/KrsiRoots"
               ],
               "contactPoint": [{
                 "@type": "ContactPoint",

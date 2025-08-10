@@ -8,15 +8,15 @@ import blogData from '@/data/blogs.json';
 const blogListingStructuredData = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  "name": "rsiRoots Blog",
+  "name": "KrsiRoots Blog",
   "description": "Insights on organic farming, sustainable practices, and healthy living",
-  "url": "https://rsiRoots.com/blog",
+  "url": "https://KrsiRoots.com/blog",
   "publisher": {
     "@type": "Organization",
-    "name": "rsiRoots",
+    "name": "KrsiRoots",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://rsiRoots.com/images/logo.png"
+      "url": "https://KrsiRoots.com/images/logo.png"
     }
   },
   "mainEntity": {
@@ -24,7 +24,7 @@ const blogListingStructuredData = {
     "itemListElement": blogData.blogs.map((blog, index) => ({
       "@type": "ListItem",
       "position": index + 1,
-      "url": `https://rsiRoots.com/blog/${blog.id}`,
+      "url": `https://KrsiRoots.com/blog/${blog.id}`,
       "name": blog.title,
       "description": blog.excerpt
     }))

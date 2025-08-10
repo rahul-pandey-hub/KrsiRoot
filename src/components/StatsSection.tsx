@@ -47,7 +47,7 @@ export default function StatsSection() {
     {
       icon: faGlobe,
       title: 'One Platform. Multiple Solutions.',
-      description: 'rsiRoots bridges the organic world using smart technology, full transparency, and a foundation of trust.',
+      description: 'KrsiRoots bridges the organic world using smart technology, full transparency, and a foundation of trust.',
       color: '#E2725B'
     },
     {

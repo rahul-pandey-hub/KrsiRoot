@@ -39,7 +39,7 @@ export default function Navbar() {
         <div className="flex justify-between h-20 items-center">
           <div className="flex-shrink-0 flex items-center">
             <Link href="/" className="font-playfair text-2xl font-bold text-[#5e724d]">
-              <Image src={'/images/rsiRoots.jpeg'} alt='logo' className='w-full h-full' width={130} height={115}/>
+              <Image src={'/images/KrsiRoots.jpeg'} alt='logo' className='w-full h-full' width={130} height={115}/>
             </Link>
           </div>
           
@@ -110,7 +110,7 @@ export default function Navbar() {
             <div className="flex flex-col h-full">
               {/* Mobile Menu Header */}
               <div className="flex justify-between items-center p-4 border-b">
-                <Image src={'/images/rsiRoots.jpeg'} alt='logo' width={100} height={60}/>
+                <Image src={'/images/KrsiRoots.jpeg'} alt='logo' width={100} height={60}/>
                 <button 
                   onClick={() => setMobileMenuOpen(false)}
                   className="p-2 text-gray-600 hover:text-[#5e724d]"
@@ -183,7 +183,7 @@ export default function Navbar() {
               {/* Mobile Menu Footer */}
               <div className="mt-auto p-6 border-t">
                 <p className="text-sm text-gray-500 text-center">
-                  © 2025 rsiRoots. All rights reserved.
+                  © 2025 KrsiRoots. All rights reserved.
                 </p>
               </div>
             </div>
