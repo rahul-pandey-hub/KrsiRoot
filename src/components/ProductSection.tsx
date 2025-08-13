@@ -37,7 +37,7 @@ export default function ProductSection() {
     {
       id: 5,
       title: "Spices",
-      image: "/images/products/spices.jpg",
+      image: "/images/products/Spices.jpg",
       rate: 600,
       discountedRate: 499
     },
