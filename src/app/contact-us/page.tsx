@@ -190,7 +190,7 @@ const ContactPage: FC = () => {
             {/* Contact Information Section */}
             <AnimatedSection className="space-y-8">
                 <div className="bg-white rounded-xl shadow-lg p-8 flex justify-center">
-                   <Image src="/images/KrsiRoots.jpeg" alt="KrsiRoots Logo" width={300} height={200} />
+                   <Image src="/images/KrsiRoots.png" alt="KrsiRoots Logo" width={300} height={200} />
                 </div>
               <div className="bg-white rounded-xl shadow-lg p-8">
                 <h2 className="text-2xl font-semibold text-primary mb-6">

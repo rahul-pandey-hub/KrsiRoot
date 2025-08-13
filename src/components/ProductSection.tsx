@@ -15,36 +15,36 @@ export default function ProductSection() {
   const products: Product[] = [
     {
       id: 1,
-      title: "Herbs and Tea",
-      image: "/images/products/herbs-and-tea.jpeg",
+      title: "Tea and Coffee",
+      image: "/images/products/Tea-Coffee.jpg",
       rate: 1200,
       discountedRate: 999
     },
     {
       id: 2,
-      title: "Oil",
-      image: "/images/products/oil.jpeg",
+      title: "Dry Fruits",
+      image: "/images/products/Dryfruits.jpg",
       rate: 1500,
       discountedRate: 1299
     },
     {
       id: 3,
-      title: "Rice",
-      image: "/images/products/rice.jpeg",
+      title: "Healthy Seeds",
+      image: "/images/products/Healthy-Seeds.jpg",
       rate: 800,
       discountedRate: 699
     },
     {
       id: 5,
       title: "Spices",
-      image: "/images/products/spices.jpeg",
+      image: "/images/products/spices.jpg",
       rate: 600,
       discountedRate: 499
     },
     {
       id: 4,
-      title: "Pulses",
-      image: "/images/products/pulses.jpeg",
+      title: "Grains",
+      image: "/images/products/Grains.jpg",
       rate: 900,
       discountedRate: 799
     },
