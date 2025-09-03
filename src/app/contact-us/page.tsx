@@ -190,7 +190,7 @@ const ContactPage: FC = () => {
             {/* Contact Information Section */}
             <AnimatedSection className="space-y-8">
                 <div className="bg-white rounded-xl shadow-lg p-8 flex justify-center">
-                   <Image src="/images/KrsiRoots.png" alt="KrsiRoots Logo" width={300} height={200} />
+                   <Image src="/images/krsiroots1.png" alt="KrsiRoots Logo" width={300} height={200} />
                 </div>
               <div className="bg-white rounded-xl shadow-lg p-8">
                 <h2 className="text-2xl font-semibold text-primary mb-6">
@@ -215,8 +215,8 @@ const ContactPage: FC = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold">Phone</h3>
-                      <Link href="tel:+919824104549" className="text-gray-600 hover:text-primary transition">
-                        <p className="text-gray-600">+91 9824104549</p>
+                      <Link href="tel:+918866034343" className="text-gray-600 hover:text-primary transition">
+                        <p className="text-gray-600">+91 8866034343</p>
                       </Link>
                     </div>
                   </div>
@@ -226,8 +226,8 @@ const ContactPage: FC = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold">Email</h3>
-                      <Link href="mailto:info@KrsiRoots.com" className="text-gray-600 hover:text-primary transition">
-                        <p className="text-gray-600">info@KrsiRoots.com</p>
+                      <Link href="mailto:dovetailindiaservices@gmail.com" className="text-gray-600 hover:text-primary transition">
+                        <p className="text-gray-600">dovetailindiaservices@gmail.com</p>
                       </Link>
                     </div>
                   </div>
@@ -241,7 +241,7 @@ const ContactPage: FC = () => {
                 </h2>
                 <div className="flex space-x-6">
                   <a
-                    href="https://www.facebook.com/people/KrsiRoots/61576127285769/"
+                    href="https://www.facebook.com/profile.php?id=61579862834774"
                     className="text-primary hover:text-primary/80 text-2xl transition"
                   >
                     <i className="fab fa-facebook"></i>
@@ -253,13 +253,13 @@ const ContactPage: FC = () => {
                     <FaXTwitter className='mt-[5px]' />
                   </a>
                   <a
-                    href="https://www.instagram.com/KrsiRoots_sm"
+                    href="https://www.instagram.com/krsiroots_organics?igsh=MXQ4aTE4Y3Jzdnk4dg=="
                     className="text-primary hover:text-primary/80 text-2xl transition"
                   >
                     <i className="fab fa-instagram"></i>
                   </a>
                   <a
-                    href="https://linkedin.com/company/KrsiRoots"
+                    href="https://in.linkedin.com/in/krsi-organics-a8a8a7375"
                     className="text-primary hover:text-primary/80 text-2xl transition"
                   >
                     <i className="fab fa-linkedin"></i>

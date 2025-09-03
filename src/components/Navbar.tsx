@@ -39,7 +39,7 @@ export default function Navbar() {
         <div className="flex justify-between h-20 items-center">
           <div className="flex-shrink-0 flex items-center">
             <Link href="/" className="font-playfair text-2xl font-bold text-[#5e724d]">
-              <Image src={'/images/KrsiRoots.png'} alt='logo' className='w-full h-full' width={130} height={110}/>
+              <Image src={'/images/krsiroots1.png'} alt='logo' className='w-full h-full' width={110} height={110}/>
             </Link>
           </div>
           
@@ -110,7 +110,7 @@ export default function Navbar() {
             <div className="flex flex-col h-full">
               {/* Mobile Menu Header */}
               <div className="flex justify-between items-center p-4 border-b">
-                <Image src={'/images/KrsiRoots.png'} alt='logo' width={130} height={110}/>
+                <Image src={'/images/krsiroots1.png'} alt='logo' width={110} height={110}/>
                 <button 
                   onClick={() => setMobileMenuOpen(false)}
                   className="p-2 text-gray-600 hover:text-[#5e724d]"

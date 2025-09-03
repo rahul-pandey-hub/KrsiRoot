@@ -147,17 +147,16 @@ export default function AboutPage() {
                 Our Story
               </h2>
               <p className="text-gray-700 mb-4">
-                To deliver high-quality organic products through ethical sourcing, empowering farmers, delighting customers, and ensuring value for every stakeholder in our journey toward sustainability.
+               At KrsiRoots Organics, we believe in going back to our roots — where nature, purity, and tradition guide every choice. Founded with a passion to bridge the gap between ancient organic wisdom and today’s conscious consumer, we are a dedicated trading company bringing together the finest organic products from India’s soil to the world.
               </p>
               <p className="text-gray-700 mb-4">
-                We are creating an ecosystem which will connect Indian Organic
-                Farmers to buyers and consumers across the Globe.
+                Rooted in authenticity and inspired by संस्कार (values), we work directly with trusted farmers and producers to ensure that every product we trade reflects our commitment to sustainability, health, and ethical sourcing.
               </p>
               <p className="text-gray-700 mb-4">
-                Indian Organic Product should be accessible to everyone.
+                From dried herbs, flowers, and roots to cow dung-based products, natural teas, and organic spices, our offerings are carefully curated, processed, and packed to retain maximum potency — free from chemicals, synthetic additives, or shortcuts. 
               </p>
               <p className="text-gray-700">
-                Your health. Our mission. The planet's future.
+                We don’t just sell organic. We stand for organic — supporting rural livelihoods and ensuring our customers enjoy the purity of earth’   s bounty, as nature intended.
               </p>
             </AnimatedSection>
           </div>
@@ -556,7 +555,7 @@ export default function AboutPage() {
             {/* Team Member 1 */}
             <AnimatedSection className="bg-white rounded-xl shadow-lg overflow-hidden">
               <a
-                href="https://www.linkedin.com/in/aditya-sharma-8960a8105/"
+                href="https://in.linkedin.com/in/krsi-organics-a8a8a7375"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block hover:transform hover:scale-105 transition-transform duration-300"

@@ -35,24 +35,46 @@ export default function ProductSection() {
       discountedRate: 699
     },
     {
-      id: 5,
+      id: 4,
       title: "Spices",
       image: "/images/products/Spices.jpg",
       rate: 600,
       discountedRate: 499
     },
     {
-      id: 4,
+      id: 5,
       title: "Grains",
       image: "/images/products/Grains.jpg",
       rate: 900,
       discountedRate: 799
     },
+    {
+      id: 6,
+      title: "Flowers",
+      image: "/images/products/flowers.jpg",
+      rate: 900,
+      discountedRate: 799
+    },
+        {
+      id: 7,
+      title: "Oil",
+      image: "/images/products/oil.jpg",
+      rate: 900,
+      discountedRate: 799
+    },
+        {
+      id: 8,
+      title: "Pulses",
+      image: "/images/products/pulses.jpg",
+      rate: 900,
+      discountedRate: 799
+    },
+
   ];
 
   const handleBuyClick = (productTitle: string) => {
     const message = `I'm interested in buying ${productTitle}`;
-    const whatsappUrl = `https://wa.me/919824104549?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/918866034343?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 

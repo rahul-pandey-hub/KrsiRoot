@@ -14,7 +14,7 @@ export default function Hero() {
       </video>
       <div className="hero-overlay absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/60 to-black/60 flex justify-center items-center flex-col z-20">
         <h1 className="text-4xl md:text-6xl text-center font-bold text-white uppercase mb-2 animate-[fadeIn_2s_ease-in-out]">
-          Nature's Goodness, Delivered Fresh
+         Rooted in Nature, Inspire by संस्कार
         </h1>
         <p className="text-xl md:text-2xl text-white mb-8 animate-[fadeIn_2.5s_ease-in-out]">
           Organic | Local | Global

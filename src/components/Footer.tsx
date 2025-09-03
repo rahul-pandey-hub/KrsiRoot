@@ -10,10 +10,10 @@ export default function Footer() {
             <h3 className="text-2xl font-bold text-secondary mb-4">KrsiRoots</h3>
             <p className="text-gray-600 mb-4">Bringing nature's goodness to your table.</p>
             <div className="flex space-x-4">
-              <Link href="https://www.facebook.com/people/KrsiRoots/61576127285769/" className="text-primary hover:text-secondary text-xl transition"><i className="fab fa-facebook"></i></Link>
-              <Link href="https://www.instagram.com/KrsiRoots_sm" className="text-primary hover:text-secondary text-xl transition"><i className="fab fa-instagram"></i></Link>
+              <Link href="https://www.facebook.com/profile.php?id=61579862834774" className="text-primary hover:text-secondary text-xl transition"><i className="fab fa-facebook"></i></Link>
+              <Link href="https://www.instagram.com/krsiroots_organics?igsh=MXQ4aTE4Y3Jzdnk4dg==" className="text-primary hover:text-secondary text-xl transition"><i className="fab fa-instagram"></i></Link>
               <Link href="https://x.com/KrsiRoots_sm" className="text-primary hover:text-secondary text-xl transition"><FaXTwitter className='mt-[5px]' /></Link>
-              <Link href="https://www.linkedin.com/company/KrsiRoots" className="text-primary hover:text-secondary text-xl transition"><i className="fab fa-linkedin"></i></Link>
+              <Link href="https://in.linkedin.com/in/krsi-organics-a8a8a7375" className="text-primary hover:text-secondary text-xl transition"><i className="fab fa-linkedin"></i></Link>
               <Link href="https://www.youtube.com/@KrsiRoots_organic" className="text-primary hover:text-secondary text-xl transition"><i className="fab fa-youtube"></i></Link>
             </div>
           </div>
@@ -50,15 +50,15 @@ export default function Footer() {
                 </Link>
               </li>
               <li className="flex items-start">
-                <Link href="tel:+919824104549" className="text-gray-600 hover:text-primary transition">
+                <Link href="tel:+918866034343" className="text-gray-600 hover:text-primary transition">
                 <i className="fas fa-phone-alt text-primary mt-1 mr-2"></i>
-                <span className="text-gray-600">+91 9824104549</span>
+                <span className="text-gray-600">+91 8866034343</span>
                 </Link>
               </li>
               <li className="flex items-start"> 
-                <Link href="mailto:info@KrsiRoots.com" className="text-gray-600 hover:text-primary transition">
+                <Link href="mailto:dovetailindiaservices@gmail.com" className="text-gray-600 hover:text-primary transition">
                 <i className="fas fa-envelope text-primary mt-1 mr-2"></i>
-                <span className="text-gray-600">info@KrsiRoots.com</span>
+                <span className="text-gray-600">dovetailindiaservices@gmail.com </span>
                 </Link>
               </li>
             </ul>

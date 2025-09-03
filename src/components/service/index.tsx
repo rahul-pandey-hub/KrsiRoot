@@ -118,7 +118,7 @@ export default function Services() {
                 <ServiceCard
                   icon={faCertificate}
                   title="Verified Quality"
-                  description="Guaranteed certified organic products meeting safety standards."
+                  description="Certified organic products, guaranteed safe and trustworthy."
                 />
               </AnimatedSection>
 
@@ -127,7 +127,7 @@ export default function Services() {
                 <ServiceCard
                   icon={faHandHoldingUsd}
                   title="Competitive Pricing"
-                  description="Bulk rates directly from producers with cost efficiency."
+                  description="Direct producer partnerships ensuring transparent and fair pricing."
                 />
               </AnimatedSection>
 
@@ -136,34 +136,34 @@ export default function Services() {
                 <ServiceCard
                   icon={faStore}
                   title="Product Variety"
-                  description="Wide range of fresh produce, grains, spices and processed organic goods and more."
+                  description="A complete range of organic produce all under one roof."
                 />
               </AnimatedSection>
 
               {/* 4. Global Sourcing */}
-              <AnimatedSection>
+              {/* <AnimatedSection>
                 <ServiceCard
                   icon={faTruck}
                   title="Global Sourcing"
                   description="Access to local, national and international organic suppliers."
                 />
-              </AnimatedSection>
+              </AnimatedSection> */}
 
               {/* 5. Sustainability Assurance */}
-              <AnimatedSection>
+              {/* <AnimatedSection>
                 <ServiceCard
                   icon={faLightbulb}
                   title="Sustainability Assurance"
                   description="Ethical sourcing that supports planet-friendly practices."
                 />
-              </AnimatedSection>
+              </AnimatedSection> */}
 
               {/* 6. Customer Support */}
               <AnimatedSection>
                 <ServiceCard
                   icon={faHeadset}
                   title="Customer Support"
-                  description="Helpdesk and after-sales service for bulk or recurring orders."
+                  description="Seamless assistance and after-sales service tailored for bulk or repeat purchases."
                 />
               </AnimatedSection>
             </div>
@@ -190,43 +190,42 @@ export default function Services() {
                 <ServiceCard
                   icon={faSearch}
                   title="Product Discovery"
-                  description="Eco system of Sellers and Buyers
-Connects farmers directly with sellers and exporters through a transparent digital platform."
+                  description="An integrated ecosystem connecting farmers with buyers and exporters in a fair and transparent way."
                 />
               </AnimatedSection>
               {/* Service Card 2 */}
               <ServiceCard
                 icon={faCalendarCheck}
                 title="Price Assurance & Transparency"
-                description="Fair pricing models that eliminate middlemen and ensure Sellers get maximum value for their produce."
+                description="Transparent pricing models ensuring farmers and sellers receive the true worth of their produce."
               />
 
               {/* Service Card 3 */}
-              <ServiceCard
+              {/* <ServiceCard
                 icon={faStore}
                 title="Digital Marketplace Access"
                 description="Platform to list and sell organic produce directly to consumers, retailers, or bulk Buyers."
-              />
+              /> */}
 
               {/* Service Card 4 */}
-              <ServiceCard
+              {/* <ServiceCard
                 icon={faHeadset}
                 title="Logistics & Delivery Support"
                 description="Help with packaging, warehousing and transport to streamline the supply chain and ensure timely deliveries."
-              />
+              /> */}
 
               {/* Service Card 5 */}
               <ServiceCard
                 icon={faPlaneDeparture}
                 title="Export Facilitation"
-                description="Guidance on global market trends, compliance requirements and buyer connections for exports."
+                description="Helping sellers navigate global trends, meet compliance needs, and connect with export buyers."
               />
 
               {/* Service Card 6 */}
               <ServiceCard
                 icon={faCertificate}
                 title="Organic Certification Support"
-                description="Assistance provided to farmers or producers in obtaining official certification that their products meet recognized organic standards"
+                description="Support for farmers and producers in securing official certifications for recognized organic standards."
               />
             </div>
           </div>

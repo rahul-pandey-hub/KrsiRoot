@@ -8,8 +8,7 @@ export default function AboutSection() {
           <div className="md:w-1/2 mb-10 md:mb-0 md:pr-10">
             <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-6">Our Organic Promise</h2>
             <p className="text-lg text-gray-700 mb-8">
-              At KrsiRoots, we believe in the power of nature to nourish and heal. Our mission is to bring you the freshest, 
-              most nutrient-rich organic produce while preserving the environment for future generations.
+              To deliver high-quality organic products through ethical sourcing, empowering farmers, delighting customers, and ensuring value for every stakeholder in our journey toward sustainability.     
             </p>
             
             <div className="space-y-6">
