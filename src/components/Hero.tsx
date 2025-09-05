@@ -1,25 +1,52 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
-import gsap from 'gsap';
+import { motion } from 'framer-motion';
 
 export default function Hero() {
   
 
   return (
-    <section  className="hero relative h-screen overflow-hidden">
-      <video autoPlay muted loop className="absolute top-1/2 left-1/2 w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 z-10">
-        <source src="https://videos.pexels.com/video-files/10041394/10041394-hd_1920_1080_24fps.mp4" type="video/mp4"/>
-        Your browser does not support the video tag.
-      </video>
-      <div className="hero-overlay absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/60 to-black/60 flex justify-center items-center flex-col z-20">
-        <h1 className="text-4xl md:text-6xl text-center font-bold text-white uppercase mb-2 animate-[fadeIn_2s_ease-in-out]">
-         Rooted in Nature, Inspire by संस्कार
-        </h1>
-        <p className="text-xl md:text-2xl text-white mb-8 animate-[fadeIn_2.5s_ease-in-out]">
-          Organic | Local | Global
-        </p>
-        <div className="scroll-indicator"></div>
+    <section className="hero relative min-h-screen flex flex-col justify-center items-center overflow-hidden">
+      <div className="absolute inset-0 z-0">
+        <video autoPlay muted loop className="w-full h-full object-cover">
+          <source src="https://www.pexels.com/download/video/5480220/" type="video/mp4"/>
+          Your browser does not support the video tag.
+        </video>
+        <div className="absolute inset-0 bg-[#e6eee7]/40"></div>
+      </div>
+      
+      <div className="relative z-10 container mx-auto px-4 text-center">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="max-w-4xl mx-auto"
+        >
+          <h1 className="text-5xl md:text-7xl font-bold text-[#2c5530] mb-6 leading-tight">
+            Rooted in Nature,<br/> Inspire by <span className="text-[#2c5535]">संस्कार</span>
+          </h1>
+          <p className="text-xl md:text-2xl text-black mb-12">
+            Organic • Local • Global
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <button className="px-8 py-3 bg-[#a8e6cf] text-[#2c5530] rounded-full hover:bg-[#e6eee7] transition-colors text-lg font-semibold">
+              Explore Products
+            </button>
+            <button className="px-8 py-3 bg-transparent border-2 border-[#2c5530] text-[#2c5530] rounded-full hover:bg-[#2c5530] hover:text-white transition-colors text-lg font-semibold">
+              Learn More
+            </button>
+          </div>
+        </motion.div>
+      </div>
+      
+      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10">
+        <motion.div
+          animate={{ y: [0, 10, 0] }}
+          transition={{ repeat: Infinity, duration: 1.5 }}
+          className="text-[#2c5530] text-4xl cursor-pointer"
+        >
+          ↓
+        </motion.div>
       </div>
     </section>
   );

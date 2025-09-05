@@ -1,284 +1,199 @@
-"use client";
+'use client';
 
-import React, { useState } from "react";
-import type { FC } from "react";
-import { AnimatedSection } from "@/components/AnimatedSection";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import Link from "next/link";
-import Image from "next/image";
-import { FaXTwitter } from "react-icons/fa6";
-import { sendContactEmail } from "@/actions/contact";
-import { useToast } from "@/components/ui/use-toast";
+import { motion } from 'framer-motion';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
-const ContactPage: FC = () => {
-  const { toast } = useToast();
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    subject: "",
-    message: "",
-  });
-  const [isLoading, setIsLoading] = useState(false);
-
-  const handleSubmit = async (e: React.FormEvent) => {
+export default function ContactPage() {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setIsLoading(true);
-    
-    try {
-      const result = await sendContactEmail(formData);
-      if (result.success) {
-        toast({
-          variant: "success",
-          title: "Success!",
-          description: "Message sent successfully! We will get back to you soon.",
-        });
-        // Clear form
-        setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          subject: "",
-          message: "",
-        });
-      } else {
-        toast({
-          variant: "destructive",
-          title: "Error",
-          description: "Failed to send message. Please try again.",
-        });
-      }
-    } catch (error) {
-      toast({
-        variant: "destructive",
-        title: "Error",
-        description: "An error occurred. Please try again later.",
-      });
-    } finally {
-      setIsLoading(false);
-    }
+    // Handle form submission
+    alert('Thank you for your message. We will get back to you soon!');
   };
 
   return (
-    <>
+    <main>
       <Navbar />
-      <div className="min-h-screen bg-gray-50 pt-16">
-        {/* Hero Section */}
-        <div className="bg-primary/10 py-12">
-          <div className="container mx-auto px-4">
-            <h1 className="text-4xl md:text-5xl font-bold text-primary text-center">
-              Get in Touch
-            </h1>
-            <p className="text-gray-600 text-center mt-4 max-w-2xl mx-auto">
-              Have questions about our organic products? We're here to help you make the right choice for your
-              health and the planet.
-            </p>
-          </div>
+      
+      {/* Hero Section */}
+      <section className="relative pt-32 pb-20 bg-[#f7f9f4]">
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute inset-0" style={{
+            backgroundImage: 'url("data:image/svg+xml,%3Csvg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="%23000000" fill-opacity="1" fill-rule="evenodd"%3E%3Ccircle cx="3" cy="3" r="3"/%3E%3C/g%3E%3C/svg%3E")',
+            backgroundSize: '24px 24px'
+          }}></div>
         </div>
+        
+        <div className="max-w-7xl mx-auto px-4 relative z-10">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-center max-w-3xl mx-auto"
+          >
+            <span className="text-[#3d7344] text-sm font-semibold tracking-wider uppercase">Contact Us</span>
+            <h1 className="text-4xl md:text-6xl font-bold text-[#2c5530] mt-4 mb-6">Get in Touch</h1>
+            <p className="text-xl text-[#5e724d]">Have questions? We're here to help and provide more information about our organic services.</p>
+          </motion.div>
+        </div>
+      </section>
 
-        <div className="max-w-7xl mx-auto px-4 py-4">
-          <div className="grid lg:grid-cols-2 gap-12">
-            {/* Contact Form Section */}
-            <AnimatedSection className="bg-white rounded-xl shadow-lg p-8">
-              <h2 className="text-2xl font-semibold text-primary mb-6">
-                Connect with us
-              </h2>
-              <form onSubmit={handleSubmit} className="space-y-3">
-                <div>
-                  <label htmlFor="name" className="block text-gray-700 mb-1">
-                    Full Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary/50 focus:border-primary"
-                    placeholder="Your name"
-                    value={formData.name}
-                    onChange={(e) =>
-                      setFormData({ ...formData, name: e.target.value })
-                    }
-                    required
-                  />
+      {/* Contact Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="grid lg:grid-cols-2 gap-16">
+            {/* Contact Information */}
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="text-3xl font-bold text-[#2c5530] mb-8">Contact Information</h2>
+              
+              <div className="space-y-8">
+                <div className="flex items-start gap-4">
+                  <div className="bg-[#f7f9f4] p-4 rounded-lg">
+                    <svg className="w-6 h-6 text-[#2c5530]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-[#2c5530]">Address</h3>
+                    <p className="text-[#5e724d]">Ahmedabad, Gujarat</p>
+                  </div>
                 </div>
-                <div>
-                  <label htmlFor="email" className="block text-gray-700 mb-2">
-                    Email Address
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary/50 focus:border-primary"
-                    placeholder="your@email.com"
-                    value={formData.email}
-                    onChange={(e) =>
-                      setFormData({ ...formData, email: e.target.value })
-                    }
-                    required
-                  />
+
+                <div className="flex items-start gap-4">
+                  <div className="bg-[#f7f9f4] p-4 rounded-lg">
+                    <svg className="w-6 h-6 text-[#2c5530]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-[#2c5530]">Email</h3>
+                    <a href="mailto:dovetailindiaservices@gmail.com" className="text-[#5e724d] hover:text-[#2c5530] transition-colors">
+                      dovetailindiaservices@gmail.com
+                    </a>
+                  </div>
                 </div>
-                <div>
-                  <label htmlFor="phone" className="block text-gray-700 mb-2">
-                    Phone Number
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary/50 focus:border-primary"
-                    placeholder="+91 9999999999"
-                    value={formData.phone}
-                    onChange={(e) =>
-                      setFormData({ ...formData, phone: e.target.value })
-                    }
-                    required
-                  />
+
+                <div className="flex items-start gap-4">
+                  <div className="bg-[#f7f9f4] p-4 rounded-lg">
+                    <svg className="w-6 h-6 text-[#2c5530]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-[#2c5530]">Phone</h3>
+                    <a href="tel:+918866034343" className="text-[#5e724d] hover:text-[#2c5530] transition-colors">
+                      +91 8866034343
+                    </a>
+                  </div>
                 </div>
-                <div>
-                  <label htmlFor="subject" className="block text-gray-700 mb-2">
-                    Subject
-                  </label>
-                  <input
-                    type="text"
-                    id="subject"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary/50 focus:border-primary"
-                    placeholder="What's this about?"
-                    value={formData.subject}
-                    onChange={(e) =>
-                      setFormData({ ...formData, subject: e.target.value })
-                    }
-                    required
-                  />
+
+                <div className="flex items-start gap-4">
+                  <div className="bg-[#f7f9f4] p-4 rounded-lg">
+                    <svg className="w-6 h-6 text-[#2c5530]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-[#2c5530]">Business Hours</h3>
+                    <p className="text-[#5e724d]">Monday - Saturday: 9:00 AM - 6:00 PM</p>
+                    <p className="text-[#5e724d]">Sunday: Closed</p>
+                  </div>
                 </div>
-                <div>
-                  <label htmlFor="message" className="block text-gray-700 mb-2">
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    rows={5}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary/50 focus:border-primary"
-                    placeholder="Your message here..."
-                    value={formData.message}
-                    onChange={(e) =>
-                      setFormData({ ...formData, message: e.target.value })
-                    }
-                    required
-                  ></textarea>
+              </div>
+            </motion.div>
+
+            {/* Contact Form */}
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
+              <form onSubmit={handleSubmit} className="bg-[#f7f9f4] p-8 rounded-2xl">
+                <h2 className="text-3xl font-bold text-[#2c5530] mb-8">Send us a Message</h2>
+                
+                <div className="space-y-6">
+                  <div>
+                    <label htmlFor="name" className="block text-[#2c5530] font-semibold mb-2">Name</label>
+                    <input
+                      type="text"
+                      id="name"
+                      required
+                      className="w-full px-4 py-3 rounded-lg bg-white border border-[#e6eee7] focus:outline-none focus:ring-2 focus:ring-[#2c5530]"
+                      placeholder="Your name"
+                    />
+                  </div>
+
+                  <div>
+                    <label htmlFor="email" className="block text-[#2c5530] font-semibold mb-2">Email</label>
+                    <input
+                      type="email"
+                      id="email"
+                      required
+                      className="w-full px-4 py-3 rounded-lg bg-white border border-[#e6eee7] focus:outline-none focus:ring-2 focus:ring-[#2c5530]"
+                      placeholder="Your email"
+                    />
+                  </div>
+
+                  <div>
+                    <label htmlFor="subject" className="block text-[#2c5530] font-semibold mb-2">Subject</label>
+                    <input
+                      type="text"
+                      id="subject"
+                      required
+                      className="w-full px-4 py-3 rounded-lg bg-white border border-[#e6eee7] focus:outline-none focus:ring-2 focus:ring-[#2c5530]"
+                      placeholder="Message subject"
+                    />
+                  </div>
+
+                  <div>
+                    <label htmlFor="message" className="block text-[#2c5530] font-semibold mb-2">Message</label>
+                    <textarea
+                      id="message"
+                      required
+                      rows={5}
+                      className="w-full px-4 py-3 rounded-lg bg-white border border-[#e6eee7] focus:outline-none focus:ring-2 focus:ring-[#2c5530] resize-none"
+                      placeholder="Your message"
+                    ></textarea>
+                  </div>
+
+                  <button
+                    type="submit"
+                    className="w-full bg-[#2c5530] text-white py-4 rounded-lg hover:bg-[#3d7344] transition-colors font-semibold"
+                  >
+                    Send Message
+                  </button>
                 </div>
-                <button
-                  type="submit"
-                  disabled={isLoading}
-                  className={`w-full bg-primary hover:bg-primary/90 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 flex items-center justify-center ${
-                    isLoading ? 'opacity-70 cursor-not-allowed' : ''
-                  }`}
-                >
-                  {isLoading ? (
-                    <>
-                      <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                      </svg>
-                      Sending...
-                    </>
-                  ) : (
-                    'Send Message'
-                  )}
-                </button>
               </form>
-            </AnimatedSection>
-
-            {/* Contact Information Section */}
-            <AnimatedSection className="space-y-8">
-                <div className="bg-white rounded-xl shadow-lg p-8 flex justify-center">
-                   <Image src="/images/krsiroots1.png" alt="KrsiRoots Logo" width={300} height={200} />
-                </div>
-              <div className="bg-white rounded-xl shadow-lg p-8">
-                <h2 className="text-2xl font-semibold text-primary mb-6">
-                  Contact Information
-                </h2>
-                <div className="space-y-4">
-                  <div className="flex items-start space-x-4">
-                    <div className="text-primary">
-                      <i className="fas fa-map-marker-alt text-xl"></i>
-                    </div>
-                    <div>
-                      <h3 className="font-semibold">Address</h3>
-                      <p className="text-gray-600">
-                        52/A, Titanium Plaza, Opp. Prahaladnagar Garden, 100 FT
-                        Road, Ahmedabad, Gujarat, 380015
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-4">
-                    <div className="text-primary">
-                      <i className="fas fa-phone text-xl"></i>
-                    </div>
-                    <div>
-                      <h3 className="font-semibold">Phone</h3>
-                      <Link href="tel:+918866034343" className="text-gray-600 hover:text-primary transition">
-                        <p className="text-gray-600">+91 8866034343</p>
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-4">
-                    <div className="text-primary">
-                      <i className="fas fa-envelope text-xl"></i>
-                    </div>
-                    <div>
-                      <h3 className="font-semibold">Email</h3>
-                      <Link href="mailto:dovetailindiaservices@gmail.com" className="text-gray-600 hover:text-primary transition">
-                        <p className="text-gray-600">dovetailindiaservices@gmail.com</p>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Social Media Links */}
-              <div className="bg-white rounded-xl shadow-lg p-8">
-                <h2 className="text-2xl font-semibold text-primary mb-6">
-                  Connect With Us
-                </h2>
-                <div className="flex space-x-6">
-                  <a
-                    href="https://www.facebook.com/profile.php?id=61579862834774"
-                    className="text-primary hover:text-primary/80 text-2xl transition"
-                  >
-                    <i className="fab fa-facebook"></i>
-                  </a>
-                  <a
-                    href="https://x.com/KrsiRoots_sm"
-                    className="text-primary hover:text-primary/80 text-2xl transition"
-                  >
-                    <FaXTwitter className='mt-[5px]' />
-                  </a>
-                  <a
-                    href="https://www.instagram.com/krsiroots_organics?igsh=MXQ4aTE4Y3Jzdnk4dg=="
-                    className="text-primary hover:text-primary/80 text-2xl transition"
-                  >
-                    <i className="fab fa-instagram"></i>
-                  </a>
-                  <a
-                    href="https://in.linkedin.com/in/krsi-organics-a8a8a7375"
-                    className="text-primary hover:text-primary/80 text-2xl transition"
-                  >
-                    <i className="fab fa-linkedin"></i>
-                  </a>
-                  <a
-                    href="https://youtube.com/@KrsiRoots_organic"
-                    className="text-primary hover:text-primary/80 text-2xl transition"
-                  >
-                    <i className="fab fa-youtube"></i>
-                  </a>
-                </div>
-              </div>
-            </AnimatedSection>
+            </motion.div>
           </div>
         </div>
-      </div>
-      <Footer />
-    </>
-  );
-};
+      </section>
 
-export default ContactPage;
+      {/* Map Section */}
+      <section className="py-20 bg-[#f7f9f4]">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="rounded-2xl overflow-hidden shadow-lg h-[400px]">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235013.70717754748!2d72.43965538473068!3d23.020497766767986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e848aba5bd449%3A0x4fcedd11614f6516!2sAhmedabad%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1710493114621!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
+    </main>
+  );
+}

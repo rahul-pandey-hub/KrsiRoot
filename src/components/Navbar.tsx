@@ -9,10 +9,9 @@ import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 
 export default function Navbar() {
   const pathname = usePathname();
-  const [isDropdownOpen, setDropdownOpen] = useState(false);
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const isActive = (path: string) => pathname === path ? 'text-[#000] font-bold bg-green-200 md:bg-transparent md:bg-[url("/images/leaf-header.png")] bg-no-repeat bg-cover bg-center' : 'text-gray-600';
+  const isActive = (path: string) => pathname === path ? 'text-[#2c5530] font-bold bg-[#e6eee7] md:bg-[#e6eee7]' : 'text-[#5e724d]';
 
   const menuVariants = {
     closed: {
@@ -34,7 +33,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-white shadow-sm fixed w-full z-50">
+    <nav className="bg-[#f7f9f4] shadow-sm fixed w-full z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20 items-center">
           <div className="flex-shrink-0 flex items-center">
@@ -52,27 +51,9 @@ export default function Navbar() {
               <Link href="/about-us" className={`${isActive('/about-us')} hover:text-[#000000] px-6 py-2 text-md font-semibold transition-all`}>
                 About
               </Link>
-              <div className="relative">
-                <button
-                  onClick={() => setDropdownOpen(!isDropdownOpen)}
-                  className={`${isActive('/services')} flex items-center hover:text-[#000000] px-6 py-2 text-md font-semibold transition-all`}
-                >
-                  Services
-                  <span className={`ml-1 mt-1px transform transition-transform ${isDropdownOpen ? 'rotate-180' : 'rotate-0'}`}>
-                    ▼
-                  </span>
-                </button>
-                {isDropdownOpen && (
-                  <div className="absolute left-0 mt-2 w-40 bg-white shadow-lg rounded-md">
-                    <Link href="/services" className="block px-4 py-2 text-gray-600 hover:text-[#000000]">
-                      Buyer
-                    </Link>
-                    <Link href="/services" className="block px-4 py-2 text-gray-600 hover:text-[#000000]">
-                      Seller
-                    </Link>
-                  </div>
-                )}
-              </div>
+              <Link href="/services" className={`${isActive('/services')} hover:text-[#000000] px-6 py-2 text-md font-semibold transition-all`}>
+                Services
+              </Link>
               <Link href="/blog" className={`${isActive('/blog')} hover:text-[#000000] px-6 py-2 text-md font-semibold transition-all`}>
                 Blog
               </Link>
@@ -105,7 +86,7 @@ export default function Navbar() {
             animate="open"
             exit="closed"
             variants={menuVariants}
-            className="fixed top-0 right-0 h-full w-[80%] bg-white shadow-xl z-50 md:hidden"
+            className="fixed top-0 right-0 h-full w-[80%] bg-[#f7f9f4] shadow-xl z-50 md:hidden"
           >
             <div className="flex flex-col h-full">
               {/* Mobile Menu Header */}
@@ -135,35 +116,13 @@ export default function Navbar() {
                 >
                   About
                 </Link>
-                <div className="px-6 py-4">
-                  <button
-                    onClick={() => setDropdownOpen(!isDropdownOpen)}
-                    className={`${isActive('/services')} flex items-center justify-between w-full text-lg font-semibold`}
-                  >
-                    Services
-                    <span className={`transform transition-transform ${isDropdownOpen ? 'rotate-180' : 'rotate-0'}`}>
-                      ▼
-                    </span>
-                  </button>
-                  {isDropdownOpen && (
-                    <div className="mt-2 ml-4 border-l-2 border-[#5e724d]">
-                      <Link 
-                        href="/services" 
-                        className="block px-4 py-2 text-gray-600 hover:text-[#5e724d]"
-                        onClick={() => setMobileMenuOpen(false)}
-                      >
-                        Buyer
-                      </Link>
-                      <Link 
-                        href="/services" 
-                        className="block px-4 py-2 text-gray-600 hover:text-[#5e724d]"
-                        onClick={() => setMobileMenuOpen(false)}
-                      >
-                        Seller
-                      </Link>
-                    </div>
-                  )}
-                </div>
+                <Link 
+                  href="/services" 
+                  className={`${isActive('/services')} px-6 py-4 text-lg font-semibold hover:bg-gray-50`}
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Services
+                </Link>
                 <Link 
                   href="/blog" 
                   className={`${isActive('/blog')} px-6 py-4 text-lg font-semibold hover:bg-gray-50`}
