@@ -32,11 +32,8 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold text-[#2c5530] mb-4">Information</h4>
             <ul className="space-y-2">
-              <li><Link href="#" className="text-[#5e724d] hover:text-[#2c5530] transition-colors">Shipping Policy</Link></li>
-              <li><Link href="#" className="text-[#5e724d] hover:text-[#2c5530] transition-colors">Return Policy</Link></li>
-              <li><Link href="#" className="text-[#5e724d] hover:text-[#2c5530] transition-colors">Privacy Policy</Link></li>
-              <li><Link href="#" className="text-[#5e724d] hover:text-[#2c5530] transition-colors">Terms of Service</Link></li>
-              <li><Link href="#" className="text-[#5e724d] hover:text-[#2c5530] transition-colors">FAQ</Link></li>
+              <li><Link href="/shipping-and-return-policy" className="text-[#5e724d] hover:text-[#2c5530] transition-colors">Shipping Policy</Link></li>
+              <li><Link href="/shipping-and-return-policy" className="text-[#5e724d] hover:text-[#2c5530] transition-colors">Return Policy</Link></li>
             </ul>
           </div>
           

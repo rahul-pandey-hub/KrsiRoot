@@ -50,7 +50,7 @@ export default function ProductSection() {
     },
     {
       id: 6,
-      title: "Flowers",
+      title: "Dried Flowers",
       image: "/images/products/flowers.jpg",
       rate: 900,
       discountedRate: 799
@@ -79,7 +79,7 @@ export default function ProductSection() {
   };
 
   return (
-    <section className="py-24 bg-[#f7f9f4]">
+    <section id="product-section" className="py-24 bg-[#f7f9f4]">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-[#3d7344] text-sm font-semibold tracking-wider uppercase">Our Products</span>
@@ -126,12 +126,12 @@ export default function ProductSection() {
         </div>
 
         <div className="text-center mt-16">
-          <button className="bg-[#3d7344] text-white px-8 py-3 rounded-full hover:bg-[#2c5530] transition-colors text-lg font-semibold inline-flex items-center gap-2">
-            View All Products
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-              <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
-            </svg>
-          </button>
+            {/* <button className="bg-[#3d7344] text-white px-8 py-3 rounded-full hover:bg-[#2c5530] transition-colors text-lg font-semibold inline-flex items-center gap-2">
+              View All Products
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+              </svg>
+            </button> */}
         </div>
       </div>
     </section>

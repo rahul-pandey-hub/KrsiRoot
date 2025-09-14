@@ -42,24 +42,34 @@ export default function AboutPage() {
       
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 bg-[#e6eee7]">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0" style={{
-            backgroundImage: 'url("data:image/svg+xml,%3Csvg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="%23000000" fill-opacity="1" fill-rule="evenodd"%3E%3Ccircle cx="3" cy="3" r="3"/%3E%3C/g%3E%3C/svg%3E")',
-            backgroundSize: '24px 24px'
-          }}></div>
-      </div>
-        
+      <div className="absolute inset-0 opacity-10">
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage:
+                'url("data:image/svg+xml,%3Csvg width=\\"20\\" height=\\"20\\" viewBox=\\"0 0 20 20\\" xmlns=\\"http://www.w3.org/2000/svg\\">%3Cg fill=\\"%23000000\\" fill-opacity=\\"1\\" fill-rule=\\"evenodd\\">%3Ccircle cx=\\"3\\" cy=\\"3\\" r=\\"3\\"/%3E%3C/g%3E%3C/svg%3E")',
+              backgroundSize: '24px 24px',
+            }}
+          ></div>
+        </div>
+
+
         <div className="max-w-7xl mx-auto px-4 relative z-10">
-              <motion.div
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             className="text-center max-w-3xl mx-auto"
           >
-            <span className="text-[#3d7344] text-sm font-semibold tracking-wider uppercase">About Us</span>
-            <h1 className="text-4xl md:text-6xl font-bold text-[#2c5530] mt-4 mb-6">Our Journey to Organic Excellence</h1>
-            <p className="text-xl text-[#5e724d]">Discover how we're revolutionizing the organic farming landscape through sustainable practices and farmer empowerment.</p>
-              </motion.div>
+            
+            <h1 className="text-4xl md:text-6xl font-bold text-[#2c5530] mt-4 mb-6">
+              About Us
+            </h1>
+            <p className="text-2xl text-[#000000] font-bold">
+            Our Journey to Organic Excellence
+            Discover how we're revolutionizing the organic farming landscape through sustainable practices and farmer empowerment.
+            </p>
+          </motion.div>
         </div>
       </section>
 
@@ -183,7 +193,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <Footer />
+      <Footer />  
     </main>
   );
-}
+} 

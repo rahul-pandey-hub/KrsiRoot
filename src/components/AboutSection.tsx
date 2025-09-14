@@ -22,7 +22,7 @@ export default function AboutSection() {
           >
             <div className="relative z-10">
               <span className="text-[#3d7344] text-sm font-semibold tracking-wider uppercase">About Us</span>
-              <h2 className="text-4xl md:text-5xl font-bold text-[#2c5530] mt-4 mb-6">Our Organic Promise</h2>
+              <h2 className="text-4xl md:text-5xl font-bold text-[#2c5530] mt-4 mb-6">Our Mission</h2>
               <p className="text-lg text-[#5e724d] mb-10">
                 To deliver high-quality organic products through ethical sourcing, empowering farmers, delighting customers, and ensuring value for every stakeholder in our journey toward sustainability.     
               </p>
