@@ -4,6 +4,8 @@ import { useEffect } from 'react';
 import {
   faHandshakeSimple,
   faGlobe,
+  faLeaf,
+  faBoxOpen,
   faTruckFast,
   faEarthAmericas,
 } from "@fortawesome/free-solid-svg-icons";
@@ -39,31 +41,31 @@ function IconStatCard({
 export default function StatsSection() {
   const stats = [
     {
-      icon: faHandshakeSimple,
-      title: 'Direct from Farms and Farmers',
-      description: 'Connects organic farmers directly with buyers and exporters through a simple, transparent digital platform.',
+      icon: faLeaf, // freshness / organic
+      title: 'Freshness Without Middlemen',
+      description: 'Direct farm-to-table connections ensure unmatched freshness, transparency, and fair value.',
       color: '#2c5530'
     },
     {
-      icon: faGlobe,
-      title: 'One Platform. Multiple Solutions.',
-      description: 'KrsiRoots bridges the organic world using smart technology, full transparency, and a foundation of trust.',
+      icon: faGlobe, // represents "platform / global"
+      title: 'One Platform. Endless Organic Possibilities',
+      description: 'A unified digital hub to explore, trade, and grow within the organic ecosystem.',
       color: '#3d7344'
     },
     {
-      icon: faTruckFast,
-      title: 'Logistics & Delivery Support',
-      description: 'Offers packaging, warehousing, and transport services to optimize supply chains and ensure fast delivery.',
+      icon: faBoxOpen, // represents delivery / hassle-free
+      title: 'Premium Organics, Zero Hassle',
+      description: 'Enjoy the finest organic products delivered with uncompromising quality and a seamless, stress-free experience.',
       color: '#5e724d'
     },
     {
-      icon: faEarthAmericas,
-      title: 'Global Market and Sourcing Access',
-      description: 'Connect to local and export markets through our trusted sourcing network—reach more buyers worldwide.',
+      icon: faEarthAmericas, // represents "infinite markets"
+      title: 'One Platform, Infinite Markets',
+      description: 'Expand your reach from local communities to global buyers through trusted sourcing networks.',
       color: '#1c3a1f'
     }
-    
   ];
+
 
   useEffect(() => {
     const createCountUpAnimation = () => {
@@ -131,14 +133,16 @@ export default function StatsSection() {
               viewport={{ once: true }}
               className="group"
             >
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center hover:bg-white/20 transition-all duration-300">
-                <div className="inline-block p-4 rounded-full bg-[#a8e6cf] mb-6">
-                  <FontAwesomeIcon 
-                    icon={stat.icon} 
-                    className="text-4xl text-[#2c5530]"
-                  />
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center hover:bg-white/20 transition-all duration-300 h-80 flex flex-col justify-between">
+                <div>
+                  <div className="inline-block p-4 rounded-full bg-[#a8e6cf] mb-6">
+                    <FontAwesomeIcon 
+                      icon={stat.icon} 
+                      className="text-4xl text-[#2c5530]"
+                    />
+                  </div>
+                  <h3 className="text-xl font-bold text-white mb-4">{stat.title}</h3>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-4">{stat.title}</h3>
                 <p className="text-[#e6eee7]">{stat.description}</p>
               </div>
             </motion.div>

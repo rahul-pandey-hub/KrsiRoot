@@ -13,7 +13,7 @@ export default function Footer() {
               <Link href="https://www.facebook.com/profile.php?id=61579862834774" className="text-[#3d7344] hover:text-[#2c5530] text-xl transition-colors"><i className="fab fa-facebook"></i></Link>
               <Link href="https://www.instagram.com/krsiroots_organics?igsh=MXQ4aTE4Y3Jzdnk4dg==" className="text-[#3d7344] hover:text-[#2c5530] text-xl transition-colors"><i className="fab fa-instagram"></i></Link>
               <Link href="https://x.com/KrsiRoots_sm" className="text-[#3d7344] hover:text-[#2c5530] text-xl transition-colors"><FaXTwitter className='mt-[5px]' /></Link>
-              <Link href="https://in.linkedin.com/in/krsi-organics-a8a8a7375" className="text-[#3d7344] hover:text-[#2c5530] text-xl transition-colors"><i className="fab fa-linkedin"></i></Link>
+              <Link href="https://www.linkedin.com/in/krsiroots-organics-a8a8a7375/" className="text-[#3d7344] hover:text-[#2c5530] text-xl transition-colors"><i className="fab fa-linkedin"></i></Link>
               <Link href="https://www.youtube.com/@KrsiRoots_organic" className="text-[#3d7344] hover:text-[#2c5530] text-xl transition-colors"><i className="fab fa-youtube"></i></Link>
             </div>
           </div>

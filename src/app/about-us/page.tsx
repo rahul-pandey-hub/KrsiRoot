@@ -42,13 +42,27 @@ export default function AboutPage() {
       
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 bg-[#e6eee7]">
-      <div className="absolute inset-0 opacity-10">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <Image
+            src="/images/products/aboutUs.jpg"
+            alt="About Us Background"
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
+        
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-[#e6eee7]/50"></div>
+        
+        {/* Pattern Overlay */}
+        <div className="absolute inset-0 opacity-10">
           <div
             className="absolute inset-0"
             style={{
-              backgroundImage:
-                'url("data:image/svg+xml,%3Csvg width=\\"20\\" height=\\"20\\" viewBox=\\"0 0 20 20\\" xmlns=\\"http://www.w3.org/2000/svg\\">%3Cg fill=\\"%23000000\\" fill-opacity=\\"1\\" fill-rule=\\"evenodd\\">%3Ccircle cx=\\"3\\" cy=\\"3\\" r=\\"3\\"/%3E%3C/g%3E%3C/svg%3E")',
-              backgroundSize: '24px 24px',
+
+              backgroundSize: '40px 40  px',
             }}
           ></div>
         </div>
@@ -86,10 +100,10 @@ export default function AboutPage() {
             >
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/images/products/pulses.jpg"
+                  src="/images/products/aboutDes.jpg"
                   alt="Our Story"
-                  width={600}
-                  height={400}
+                  width={500}
+                  height={250}
                   className="w-full h-auto"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#a8e6cf]/50 to-transparent"></div>
@@ -169,7 +183,7 @@ export default function AboutPage() {
 
           <div className="grid md:grid-cols-3 gap-12">
             {[
-              { name: "USDA Organic", image: "/images/certifications/Usda-npop.jpg" },
+              { name: "Fssai", image: "/images/certifications/fssai.jpg" },
               { name: "Organic India", image: "/images/certifications/organic-india.jpg" },
               { name: "Jaivik Bharat", image: "/images/certifications/jaivik-bharat.png" }
             ].map((cert, index) => (

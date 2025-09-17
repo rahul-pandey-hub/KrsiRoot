@@ -34,46 +34,36 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Main Services Section */}
+      {/* Buyers Services Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <span className="text-[#3d7344] text-sm font-semibold tracking-wider uppercase">For Buyers</span>
+            <h2 className="text-4xl font-bold text-[#2c5530] mt-4 mb-6">Premium Organic Solutions</h2>
+            <p className="text-xl text-[#5e724d]">Quality organic products with complete transparency and support.</p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
             {[
               {
-                title: "Farmer Support",
-                description: "Comprehensive support for organic farmers including training, certification assistance, and technical guidance.",
-                icon: "🌱",
-                features: ["Technical Training", "Certification Support", "Quality Control", "Market Access"]
+                title: "Verified Quality",
+                description: "Certified organic products, guaranteed safe and trustworthy.",
+                icon: "🏅",
               },
               {
-                title: "Distribution Network",
-                description: "Efficient distribution channels connecting organic producers with retailers and consumers.",
-                icon: "🚛",
-                features: ["Nationwide Network", "Cold Chain", "Quality Assurance", "Timely Delivery"]
+                title: "Competitive Pricing",
+                description: "Direct producer partnerships ensuring transparent and fair pricing.",
+                icon: "💰",
               },
               {
-                title: "Market Access",
-                description: "Connect with both domestic and international markets for organic products.",
-                icon: "🌍",
-                features: ["Export Support", "Market Analysis", "Price Optimization", "Buyer Network"]
+                title: "Product Variety",
+                description: "A complete range of organic produce all under one roof.",
+                icon: "🌾",
               },
               {
-                title: "Quality Certification",
-                description: "Comprehensive organic certification services and quality assurance.",
-                icon: "✔️",
-                features: ["Testing Services", "Documentation", "Compliance Support", "Regular Audits"]
-              },
-              {
-                title: "Storage Solutions",
-                description: "State-of-the-art storage facilities for organic products.",
-                icon: "🏭",
-                features: ["Temperature Control", "Pest Management", "Inventory Tracking", "Security"]
-              },
-              {
-                title: "Digital Platform",
-                description: "Advanced digital solutions for tracking and managing organic produce.",
-                icon: "💻",
-                features: ["Real-time Tracking", "Digital Payments", "Analytics", "Mobile App"]
+                title: "Customer Support",
+                description: "Seamless assistance and after-sales service tailored for bulk or repeat purchases.",
+                icon: "🤝",
               }
             ].map((service, index) => (
               <motion.div
@@ -87,16 +77,57 @@ export default function ServicesPage() {
                 <div className="text-4xl mb-6">{service.icon}</div>
                 <h3 className="text-2xl font-bold text-[#2c5530] mb-4">{service.title}</h3>
                 <p className="text-[#5e724d] mb-6">{service.description}</p>
-                <ul className="space-y-3">
-                  {service.features.map((feature, i) => (
-                    <li key={i} className="flex items-center gap-2 text-[#3d7344]">
-                      <svg className="w-5 h-5 text-[#2c5530]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                      </svg>
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
+                
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Sellers Services Section */}
+      <section className="py-20 bg-[#f7f9f4]">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <span className="text-[#3d7344] text-sm font-semibold tracking-wider uppercase">For Sellers</span>
+            <h2 className="text-4xl font-bold text-[#2c5530] mt-4 mb-6">Comprehensive Seller Support</h2>
+            <p className="text-xl text-[#5e724d]">Empowering farmers and producers with tools for success.</p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+            {[
+              {
+                title: "Product Discovery",
+                description: "An integrated ecosystem connecting farmers with buyers and exporters in a fair and transparent way.",
+                icon: "🔍",
+              },
+              {
+                title: "Price Assurance & Transparency",
+                description: "Transparent pricing models ensuring farmers and sellers receive the true worth of their produce.",
+                icon: "📊",
+              },
+              {
+                title: "Export Facilitation",
+                description: "Helping sellers navigate global trends, meet compliance needs, and connect with export buyers.",
+                icon: "🌍",
+              },
+              {
+                title: "Organic Certification Support",
+                description: "Support for farmers and producers in securing official certifications for recognized organic standards.",
+                icon: "📜",
+              }
+            ].map((service, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-2xl p-8 hover:shadow-xl transition-all duration-300"
+              >
+                <div className="text-4xl mb-6">{service.icon}</div>
+                <h3 className="text-2xl font-bold text-[#2c5530] mb-4">{service.title}</h3>
+                <p className="text-[#5e724d] mb-6">{service.description}</p>
+                
               </motion.div>
             ))}
           </div>

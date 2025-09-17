@@ -126,7 +126,7 @@ export default function RootLayout({
                 "https://www.facebook.com/profile.php?id=61579862834774",
                 "https://twitter.com/KrsiRoots",
                 "https://www.instagram.com/krsiroots_organics?igsh=MXQ4aTE4Y3Jzdnk4dg==",
-                "https://in.linkedin.com/in/krsi-organics-a8a8a7375"
+                "https://www.linkedin.com/in/krsiroots-organics-a8a8a7375/"
               ],
               "contactPoint": [{
                 "@type": "ContactPoint",
