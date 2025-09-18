@@ -93,18 +93,7 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="bg-[#f7f9f4] p-4 rounded-lg">
-                    <svg className="w-6 h-6 text-[#2c5530]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-[#2c5530]">Business Hours</h3>
-                    <p className="text-[#5e724d]">Monday - Saturday: 9:00 AM - 6:00 PM</p>
-                    <p className="text-[#5e724d]">Sunday: Closed</p>
-                  </div>
-                </div>
+                
               </div>
             </motion.div>
 

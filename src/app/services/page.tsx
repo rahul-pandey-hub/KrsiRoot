@@ -74,7 +74,6 @@ export default function ServicesPage() {
                 viewport={{ once: true }}
                 className="bg-[#f7f9f4] rounded-2xl p-8 hover:shadow-xl transition-all duration-300"
               >
-                <div className="text-4xl mb-6">{service.icon}</div>
                 <h3 className="text-2xl font-bold text-[#2c5530] mb-4">{service.title}</h3>
                 <p className="text-[#5e724d] mb-6">{service.description}</p>
                 
@@ -124,7 +123,6 @@ export default function ServicesPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-2xl p-8 hover:shadow-xl transition-all duration-300"
               >
-                <div className="text-4xl mb-6">{service.icon}</div>
                 <h3 className="text-2xl font-bold text-[#2c5530] mb-4">{service.title}</h3>
                 <p className="text-[#5e724d] mb-6">{service.description}</p>
                 

@@ -54,9 +54,7 @@ export default function Navbar() {
               <Link href="/services" className={`${isActive('/services')} hover:text-[#000000] px-6 py-2 text-md font-semibold transition-all`}>
                 Services
               </Link>
-              <Link href="/blog" className={`${isActive('/blog')} hover:text-[#000000] px-6 py-2 text-md font-semibold transition-all`}>
-                Blog
-              </Link>
+
               <Link href="/contact-us" className={`${isActive('/contact-us')} hover:text-[#000000] px-6 py-2 text-md font-semibold transition-all`}>
                 Contact
               </Link>
@@ -123,13 +121,7 @@ export default function Navbar() {
                 >
                   Services
                 </Link>
-                <Link 
-                  href="/blog" 
-                  className={`${isActive('/blog')} px-6 py-4 text-lg font-semibold hover:bg-gray-50`}
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Blog
-                </Link>
+
                 <Link 
                   href="/contact-us" 
                   className={`${isActive('/contact-us')} px-6 py-4 text-lg font-semibold hover:bg-gray-50`}
