@@ -194,7 +194,7 @@ export default function ServicesPage() {
             <p className="text-xl text-[#5e724d] mb-8">Join us in revolutionizing organic farming and distribution.</p>
             <button className="bg-[#2c5530] text-white px-8 py-4 rounded-full hover:bg-[#3d7344] transition-colors text-lg font-semibold">
               <Link href="/contact-us">
-                Contact Us Today
+                Contact Us Todayf
               </Link>
             </button>
           </motion.div>

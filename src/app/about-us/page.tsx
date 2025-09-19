@@ -133,8 +133,7 @@ export default function AboutPage() {
       <section className="py-20 bg-[#e6eee7]">
         <div className="max-w-7xl mx-auto px-4">
           <AnimatedSection className="text-center max-w-3xl mx-auto mb-16">
-            <span className="text-[#3d7344] text-sm font-semibold tracking-wider uppercase">Our Vision</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#2c5530] mt-4 mb-6">Empowering Organic Growth</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#2c5530] mt-4 mb-6 uppercase">Our Vision</h2>
             <p className="text-xl text-[#5e724d] italic">"To be a trusted leader in organic trading, fostering healthier communities and a sustainable planet for all."</p>
           </AnimatedSection>
 
